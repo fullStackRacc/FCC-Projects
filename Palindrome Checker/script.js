@@ -16,8 +16,10 @@ function testPalindrome() {
     } 
 
     if (cleanInputLower === reversedInput) {
-        result.innerHTML = `<p>${textInput} is a palindrome</p>`    
+        result.classList.remove("hidden")
+        result.innerHTML = `<p class="user-input"><strong>${textInput}</strong> is a palindrome</p>`    
     } else {
-        result.innerHTML = `<p>${textInput} is not a palindrome</p>`
+        result.classList.remove("hidden")
+        result.innerHTML = `<p class="user-input"><strong>${textInput}</strong> is not a palindrome</p>`
     }
 }
